@@ -92,7 +92,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       set({
         token,
         expiresIn: Number(expires),
-        userId,
+        userId: userId ?? "",
         isAuthenticated: true,
       });
     }
