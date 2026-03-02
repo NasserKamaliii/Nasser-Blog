@@ -43,7 +43,7 @@ export const usePostFormStore = create<PostFormState>((set, get) => ({
           content: post.content,
           categoryId: post.category.id,
           tagIds: Array.from(post.tags).map((t) => t.id),
-          postStatus: post.status,
+          postStatus: post.postStatus,
         },
         loading: false,
       });
