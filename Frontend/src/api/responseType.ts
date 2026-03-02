@@ -65,7 +65,6 @@ export interface RegisterForm {
 export interface LoginForm {
   email: string;
   password: string;
-  userId:string
 }
 
 export interface AuthResponse {
